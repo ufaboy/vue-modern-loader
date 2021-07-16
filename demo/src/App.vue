@@ -7,6 +7,18 @@
         Loader will be stopped after 5 sec
         <input type="color" v-model="color">
       </section>
+      <section class="description">
+        <p>Just add these lines to the main script:</p>
+        <p><code>
+          import VueModernLoader from 'vue-modern-loader'
+          Vue.use(VueModernLoader), {color: '#41A238'})
+        </code>
+        <p>
+        <p>
+          You can also change the color of the loader:</p>
+        <p><code>Vue.use(VueModernLoader, {color: '#41A238'})</code>
+        </p>
+      </section>
     </main>
   </div>
 </template>
@@ -15,8 +27,7 @@
 
 export default {
   name: 'App',
-  components: {
-  },
+  components: {},
   data: () => ({
     color: null,
   }),
@@ -37,5 +48,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  font-size: 20px;
+
+}
+.description {
+  text-align: left;
 }
 </style>

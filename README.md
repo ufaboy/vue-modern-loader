@@ -4,12 +4,16 @@
 ## Only for Vue 2
 Easy to use, highly customizable Vue.js loader plugin!
 
-### 😎 [Examples](https://github.com/ufaboy/vue-modern-loader/) 
+### 😎 [Examples](https://ufaboy.github.io/vue-modern-loader/) 
 
 ### 🤓 [Documentation](https://github.com/ufaboy/vue-modern-loader/) 
 
-#### import VueModernLoader from 'vue-modern-loader'
-#### Vue.use(VueModernLoader, {color: '#41A238'})
+### Just add these lines to the main script:
+import VueModernLoader from 'vue-modern-loader'
+Vue.use(VueModernLoader), {color: '#41A238'})
+
+#### You can also change the color of the loader:
+Vue.use(VueModernLoader, {color: '#41A238'})
 
 ### 🤖 [Changelog](https://github.com/ufaboy/vue-modern-loader)
 
@@ -17,5 +21,5 @@ Easy to use, highly customizable Vue.js loader plugin!
 
 ### 💰 [Sponsorship](https://github.com/sponsors/ufaboy)
 
-# ⚠️⚠️⚠️ 1.0.8 version:
-first working version
+# ⚠️⚠️⚠️ 1.1.1 version:
+add Github Actions for auto deploy demo to Github Pages
