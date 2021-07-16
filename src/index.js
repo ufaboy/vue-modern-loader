@@ -38,5 +38,5 @@ if (GlobalVue) {
 }
 
 // Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
-export default VueModernLoader;
+// export default VueModernLoader;
 

@@ -306,7 +306,9 @@
       GlobalVue.use(plugin);
   }
 
-  exports.default = __vue_component__;
+  // Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
+  // export default VueModernLoader;
+
   exports.install = install;
 
   Object.defineProperty(exports, '__esModule', { value: true });

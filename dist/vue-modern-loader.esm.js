@@ -300,5 +300,7 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default __vue_component__;
+// Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
+// export default VueModernLoader;
+
 export { install };
