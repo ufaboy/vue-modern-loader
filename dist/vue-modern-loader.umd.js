@@ -1,10 +1,10 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('src/LoaderModule.vue')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'src/LoaderModule.vue'], factory) :
-    (global = global || self, factory(global.LoaderModule = {}, global.LoaderModule));
-}(this, (function (exports, LoaderModule) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('src/vue-modern-loader.vue')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'src/vue-modern-loader.vue'], factory) :
+    (global = global || self, factory(global.LoaderModule = {}, global.VueModernLoader));
+}(this, (function (exports, VueModernLoader) { 'use strict';
 
-    LoaderModule = LoaderModule && Object.prototype.hasOwnProperty.call(LoaderModule, 'default') ? LoaderModule['default'] : LoaderModule;
+    VueModernLoader = VueModernLoader && Object.prototype.hasOwnProperty.call(VueModernLoader, 'default') ? VueModernLoader['default'] : VueModernLoader;
 
     // Импорт vue компонента
 
@@ -12,7 +12,7 @@
     function install(Vue) {
         if (install.installed) { return; }
         install.installed = true;
-        Vue.component('LoaderModule', LoaderModule);
+        Vue.component('VueModernLoader', VueModernLoader);
         Vue.prototype.$loader = function (status) {
             if (status === 'show') {
                 loader.showLoader();
@@ -24,7 +24,7 @@
         mountNode.id = 'loaderNode';
         mountNode.ref = 'loaderRef';
         document.body.appendChild(mountNode);
-        var loaderComp = Vue.extend(LoaderModule);
+        var loaderComp = Vue.extend(VueModernLoader);
         var loader = new loaderComp().$mount('#loaderNode');
     }
 
@@ -44,7 +44,7 @@
         GlobalVue.use(plugin);
     }
 
-    exports.default = LoaderModule;
+    exports.default = VueModernLoader;
     exports.install = install;
 
     Object.defineProperty(exports, '__esModule', { value: true });

@@ -1,4 +1,4 @@
-import LoaderModule from 'src/LoaderModule.vue';
+import VueModernLoader from 'src/vue-modern-loader.vue';
 
 // Импорт vue компонента
 
@@ -6,7 +6,7 @@ import LoaderModule from 'src/LoaderModule.vue';
 function install(Vue) {
     if (install.installed) { return; }
     install.installed = true;
-    Vue.component('LoaderModule', LoaderModule);
+    Vue.component('VueModernLoader', VueModernLoader);
     Vue.prototype.$loader = function (status) {
         if (status === 'show') {
             loader.showLoader();
@@ -18,7 +18,7 @@ function install(Vue) {
     mountNode.id = 'loaderNode';
     mountNode.ref = 'loaderRef';
     document.body.appendChild(mountNode);
-    var loaderComp = Vue.extend(LoaderModule);
+    var loaderComp = Vue.extend(VueModernLoader);
     var loader = new loaderComp().$mount('#loaderNode');
 }
 
@@ -38,5 +38,5 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default LoaderModule;
+export default VueModernLoader;
 export { install };
