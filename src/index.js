@@ -1,5 +1,5 @@
 // Импорт vue компонента
-import VueModernLoader from "src/vue-modern-loader.vue";
+import VueModernLoader from "./vue-modern-loader.vue";
 
 // Объявление функции установки, выполняемой Vue.use()
 export function install(Vue) {
