@@ -10,9 +10,9 @@
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-moder-loader.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-moder-loader.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-moder-loader.min.js"
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-modern-loader.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-modern-loader.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-modern-loader.min.js"
   },
   "devDependencies": {
     "rollup": "^1.17.0",

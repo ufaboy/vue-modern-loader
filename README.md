@@ -1,7 +1,7 @@
 <p align="center">
   
 # vue-modern-loader
-
+## Only for Vue 2
 Easy to use, highly customizable Vue.js loader plugin!
 
 ### 😎 [Examples](https://github.com/ufaboy/vue-modern-loader/) 
