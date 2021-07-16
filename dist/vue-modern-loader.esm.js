@@ -303,4 +303,4 @@ if (GlobalVue) {
 // Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
 // export default VueModernLoader;
 
-export { install };
+export default install;

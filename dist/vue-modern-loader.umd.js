@@ -309,7 +309,7 @@
   // Экспорт компонента, для использования в качестве модуля (npm/webpack/etc.)
   // export default VueModernLoader;
 
-  exports.install = install;
+  exports.default = install;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

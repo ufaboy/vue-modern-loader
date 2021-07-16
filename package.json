@@ -1,6 +1,6 @@
 {
   "name": "vue-modern-loader",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "Vue plugin adds a loader to the body of the application",
   "main": "dist/vue-modern-loader.umd.js",
   "module": "dist/vue-modern-loader.esm.js",

@@ -2,7 +2,7 @@
 import VueModernLoader from "./vue-modern-loader.vue";
 
 // Объявление функции установки, выполняемой Vue.use()
-export function install(Vue) {
+export default function install(Vue) {
     if (install.installed) return;
     install.installed = true;
     Vue.component('VueModernLoader', VueModernLoader);
