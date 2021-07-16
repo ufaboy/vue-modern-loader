@@ -23,7 +23,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: 'hsla(150, 100%, 50%, 1)'
+      default: 'hsla(115, 49%, 43%, 1)'
     },
     size: {
       type: Number,
