@@ -1,5 +1,5 @@
 // Импорт vue компонента
-import LoaderModule from "src/App";
+import LoaderModule from "src/LoaderModule.vue";
 
 // Объявление функции установки, выполняемой Vue.use()
 export function install(Vue) {
