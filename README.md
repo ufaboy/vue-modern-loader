@@ -2,7 +2,7 @@
   
 # vue-modern-loader
 
-Easy to use, highly customizable Vue.js loader plugin.
+Easy to use, highly customizable Vue.js loader plugin!
 
 ### 😎 [Examples](https://github.com/ufaboy/vue-modern-loader/) 
 
