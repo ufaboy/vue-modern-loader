@@ -15,6 +15,8 @@ Vue.use(VueModernLoader), {color: '#41A238'})
 #### You can also change the color of the loader:
 Vue.use(VueModernLoader, {color: '#41A238'})
 
+#### call $loader('show') anywhere or $loader() for close loader
+
 ### 🤖 [Changelog](https://github.com/ufaboy/vue-modern-loader)
 
 [comment]: <> (### 🙌 [Looking for maintainers]&#40;https://github.com/ufaboy/vue-modern-loader&#41;)
